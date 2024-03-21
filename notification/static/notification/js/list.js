@@ -160,7 +160,7 @@ function handleSearch() {
 
 // 서버에서 데이터 가져오는 함수
 function fetchNotifications(page, category, searchOption='', searchText='') {
-    let url = `http://127.0.0.1:10000/notification/list/${page}?category=${category}`;
+    let url = `/notification/list/${page}?category=${category}`;
     // 검색 옵션과 검색어가 주어진 경우 URL에 추가
     if (searchOption && searchText) {
         url += `&type=${searchOption}&keyword=${searchText}`;
