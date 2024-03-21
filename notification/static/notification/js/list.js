@@ -5,7 +5,7 @@ let page = 1
 const tabbtns = document.querySelectorAll("div.ui-tabs ul li");
 
 const getList = (callback) => {
-    fetch(`http://127.0.0.1:10000/notification/list/${page}`)
+    fetch(`http://3.38.231.216/notification/list/${page}`)
         .then((response) => response.json())
         .then((notifications) => {
             if(callback){
