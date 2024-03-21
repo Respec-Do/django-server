@@ -55,54 +55,6 @@ const showList = (notification_info) => {
 
 getList(showList);
 
-// for (let i=0; i< tabbtns.length; i ++) {
-//     tabbtns[i].addEventListener("click", (e)=>{
-//         tabbtns.forEach(tabbtn=> tabbtn.classList.remove("active"));
-//         e.currentTarget.classList.add("active");
-//         page = 1;
-//         category = i;
-//         fetch(`http://127.0.0.1:10000/notification/list/${page}?category=${category}`)
-//             .then((response) => response.json())
-//             .then((notifications) => {
-//                 li.innerHTML = '';
-//                 showList(notifications);
-//             })
-//     })
-// }
-//
-// const pageLinks = document.querySelectorAll(".pagination a");
-//
-// pageLinks.forEach(link => {
-//     link.addEventListener("click", (e)=> {
-//         e.preventDefault();
-//
-//         const pageNumber = parseInt(e.target.getAttribute("data-page"));
-//         fetch(`http://127.0.0.1:10000/notification/list/${pageNumber}?category=${category}`)
-//             .then(response => response.json())
-//             .then(notifications => {
-//                 // 리스트 업데이트
-//                 li.innerHTML = '';
-//                 showList(notifications);
-//             })
-//             .catch(error => console.error('Error:', error));
-//     });
-// });
-//
-//
-// const searchButton = document.getElementById("searchButton");
-//
-// searchButton.addEventListener("click", () => {
-//     const searchText = document.getElementById('searchTextInBoard').value;
-//     const searchOption = document.getElementById('searchSelectInBoard').value;
-//
-//     fetch(`http://127.0.0.1:10000/notification/list/${page}?category=${category}&type=${searchOption}&keyword=${searchText}`)
-//         .then((response) => response.json())
-//         .then((notifications) => {
-//             li.innerHTML = '';
-//             showList(notifications);
-//         })
-//         .catch(error => console.error('Error:', error));
-// });
 let currentCategory = 0;
 
 function setCurrentCategory(index) {
