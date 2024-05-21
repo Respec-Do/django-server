@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['127.0.0.1','localhost','3.38.231.216', 'one-lab.shop']
 # Application definition
 
 INSTALLED_APPS = [
+    'ai',
     'visitRecord',
     'exhibitionMember',
     'placeMember',
